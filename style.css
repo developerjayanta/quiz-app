@@ -1,0 +1,57 @@
+*{
+    margin:0; padding:0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: blue;
+    display: flex; align-items: center; justify-content: center; height: 100vh;
+}
+.card{
+    background-color: beige; width: 30vw; 
+    padding:30px;
+    border-radius: 20px;
+    box-shadow: .5px .5px 3px black;
+}
+.quiz h2 {
+    border-top: 1px solid black;
+    margin: 10px;
+    padding-top: 5px;
+}
+.ans-button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+.btn{
+margin-bottom: 5px;
+border-radius: 10px;
+outline:none;
+border:1px solid #222;
+height:1.9rem;
+cursor: pointer;
+text-align: left;
+padding:5px;
+font-size: 15px;
+font-weight: 400;
+}
+
+.btn:hover:not([disabled]){
+    background-color: blue;
+    transition: .5s;
+    color:aliceblue
+
+}
+.next-btn{
+    width:130px; border:0; padding:5px; background: red; color:aqua; margin:20px auto 0; display:block;
+     text-align: center; font-size: 25px; border-radius: 7px; font-weight: 500; display:none; cursor: pointer;
+     transition: .5s;
+}
+.next-btn:hover{
+    background-color: black;
+}
+.corrects{
+    background-color: rgb(23, 238, 91);
+}
+.incorrect{
+    background-color: red;
+}
